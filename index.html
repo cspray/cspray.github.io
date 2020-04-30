@@ -1,63 +1,224 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
   <meta charset="utf-8" />
-  <title>About cspray</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>cspray.io</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
-  <style>
-    .avatar {
-      width: 256px;
-      margin: 0 auto 2em;
-    }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/hover-min.css" />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous"
+  />
 </head>
 <body>
-<header class="section">
-  <h1 class="title is-1 has-text-centered">Charles Sprayberry</h1>
-  <div class="columns is-centered">
-    <div class="column is-half is-full-mobile">
-      <div class="level">
-        <div class="level-item has-text-centered">
-          <a class="link" href="https://blog.cspray.io">
-            Blog
-          </a>
-        </div>
-        <div class="level-item has-text-centered">
-          <a class="link" href="https://github.com/cspray">
-            GitHub
-          </a>
-        </div>
-        <div class="level-item has-text-centered">
-          <a class="link" href="https://stackoverflow.com/users/746010/charles-sprayberry">
-            Stack Overflow
-          </a>
+<header>
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item title" href="/">
+        <h1>
+          cspray.io
+        </h1>
+      </a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div class="columns">
+    <div class="column is-3-desktop is-4-tablet is-12-mobile">
+      <div class="section">
+        <div class="card family-card charles-card">
+          <div class="card-image">
+            <figure class="image is-square">
+              <img class="avatar" src="./img/charles-nick.jpeg" alt="Charles Sprayberry and his dog, Nick" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="content">
+              My name is Charles Sprayberry, I'm a Sr. Software Engineer at <a href="https://petpocketbook.com">PetPocketbook</a>
+              where I write software to simplify managing pet care. I write and contribute to OSS; primarily asynchronous PHP
+              libraries and applications. I'm married to a beautiful woman named Dyana and care for 2 dogs, Nick and Kate. When
+              I'm not writing software I like to play video games, hike through the woods, and run RC cars.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</header>
 
-<main class="section">
-  <div class="columns is-centered">
-    <div class="column is-half is-narrow is-full-mobile">
-      <figure class="image avatar">
-        <img src="https://www.gravatar.com/avatar/0fd2816e78f6a04d5f8ce0aba1cb42e6?s=256&d=identicon&r=PG" class="is-rounded" alt="Charles Sprayberry and his dog, Nick" />
-      </figure>
+    <div class="column">
+      <section class="section">
+        <h3 class="subtitle">Where you can find me online</h3>
+        <div class="columns is-mobile is-multiline">
+          <div class="column is-narrow">
+            <a href="https://blog.cspray.io" class="social-media-button hvr-shadow has-text-black">
+              <div>
+                <span class="icon is-large">
+                  <i class="fas fa-book fa-2x"></i>
+                </span>
+                <div>blog.cspray.io</div>
+              </div>
+            </a>
+          </div>
+          <div class="column is-narrow">
+            <a href="https://github.com/cspray" class="social-media-button hvr-shadow github-button">
+              <div>
+                <span class="icon is-large">
+                  <i class="fab fa-github fa-2x"></i>
+                </span>
+                <div>GitHub</div>
+              </div>
+            </a>
+          </div>
+          <div class="column is-narrow">
+            <a href="https://linkedin.com/in/cspray" class="social-media-button hvr-shadow linkedin-button">
+              <div>
+                <span class="icon is-large">
+                  <i class="fab fa-linkedin fa-2x"></i>
+                </span>
+                <div>LinkedIn</div>
+              </div>
+            </a>
+          </div>
+          <div class="column is-narrow">
+            <a href="https://stackoverflow.com/users/746010/charles-sprayberry" class="social-media-button hvr-shadow stack-overflow-button">
+              <div>
+                <span class="icon is-large">
+                  <i class="fab fa-stack-overflow fa-2x"></i>
+                </span>
+                <div>Stack Overflow</div>
+              </div>
+            </a>
+          </div>
+          <div class="column is-narrow">
+            <a href="https://twitter.com/charlesspray" class="social-media-button hvr-shadow twitter-button">
+              <div>
+                <span class="icon is-large">
+                  <i class="fab fa-twitter fa-2x"></i>
+                </span>
+                <div>Twitter</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <h3 class="subtitle">Notable Projects</h3>
+        <article class="content box">
+          <h4>
+            <a href="https://github.com/labrador-kennel">
+              Labrador Kennel
+            </a>
+          </h4>
+          <p>
+            A suite of libraries and microframeworks written on top of <a href="https://amphp.org">Amp</a> and intended
+            to be opinionated, well-tested, and encourages clean separation of concerns through its design. If you're at
+            all interested in the concept of asynchronous PHP I encourage you to check out Amp and Labrador Kennel.
+          </p>
+        </article>
+        <article class="content box">
+          <h4>
+            <a href="https://github.com/labrador-kennel/http-cors">
+              http-cors
+            </a>
+          </h4>
+          <p>
+            A library that is part of Labrador Kennel it is a CORS Middleware for <a href="https://github.com/amphp/http-server">Amp http-server</a>.
+            It has no dependencies on any other Labrador project and is a well-tested, easy-to-use, highly-configurable
+            way to handle cross origin requests in Amp. The project has been listed on the http-server project's README
+            and its goal is to be the <i>de facto</i> CORS Middleware for Amp projects.
+          </p>
+        </article>
+        <article class="content box">
+          <h4>
+            <a href="https://github.com/cspray/yape">
+              yape
+            </a>
+          </h4>
+          <p>
+            Yet Another PHP Enum (yape) is a project aimed at providing a type-safe, object-backed enum implementation
+            in userland PHP by providing an interface and a trait that makes implementing that interface straightforward.
+            There's also a CLI tool to generate the enum code for you as well as a DBAL extension for storing enums as a
+            Doctrine Type.
+          </p>
+        </article>
+        <article class="content box">
+          <h4>
+            <a href="https://github.com/cspray/websocket-commands">
+              websocket-commands
+            </a>
+          </h4>
+          <p>
+            A microframework written on top of Amp's <a href="">websocket-server</a> and aims to provide a way to create
+            commands that respond to structured JSON data sent from a websocket client.
+          </p>
+        </article>
+      </section>
 
-      <p class="content">
-      My name is Charles Sprayberry, I am a Software Engineer at <a href="https://www.petpocketbook.com">PetPocketbook</a>, a technology
-        company headquartered in Boston, MA, that builds a set of software to help pet care providers and pet parents better manage the 
-        well being of their pets. When I am not writing software for my job I contribute to open source software and develop
-        asynchronous applications in PHP.
-      </p>
-      <p class="content">
-        I am married to a wonderful woman and take care of 2 awesome dogs. When I'm not writing software I like to
-        play video games, read books, and reduce my reliance on the surveillance economy.
-      </p>
-      <p class="content">
-        Thoughts are my own and not necessarily representative of my employer.
-      </p>
+      <section class="section">
+        <h3 class="subtitle">My Family</h3>
+        <article>
+          <div class="columns is-centered">
+            <div class="column is-one-third">
+              <div class="card family-card">
+                <div class="card-image">
+                  <figure class="image is-square">
+                    <img src="./img/dyana.jpg" alt="Dyana Sprayberry, my wife" />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="content">
+                    <strong>Dyana</strong>
+                    <br>
+                    A student at Northern Vermont University where she's studying for a Bachelor's in Psychology. In her spare
+                    time she likes to read, write poetry, and go on hikes in the woods.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-one-third">
+              <div class="card family-card">
+                <div class="card-image">
+                  <figure class="image is-square">
+                    <img src="./img/nick.jpg" alt="Nick" />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="content">
+                    <strong>Nick</strong>
+                    <br>
+                    Nick was a personal adoption that turned out to be the greatest dog ever. He's a happy-go-lucky, dog's
+                    dog that enjoys running after rabbits, chewing on things, rolling in the mud, and belly rubs.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-one-third">
+              <div class="card family-card">
+                <div class="card-image">
+                  <figure class="image is-square">
+                    <img src="./img/kate.jpg" alt="Kate" />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="content">
+                    <strong>Kate</strong>
+                    <br>
+                    Kate was a rescue from the Burlington Humane Society. She's the sweetest little bundle of muscle you'll
+                    find. She loves to nap, get loved on, and to eat food.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
     </div>
   </div>
 </main>

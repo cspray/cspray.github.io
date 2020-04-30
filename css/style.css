@@ -1,0 +1,70 @@
+.avatar {
+    width: 256px;
+    height: 256px;
+    margin: 0 auto 1em;
+    display: block;
+}
+
+.tile.notable-project:nth-child(2) {
+    margin: 0 1em 0 !important;
+}
+
+.twitter-button {
+    background-color: #1da1f2;
+    color: #f5f8fa;
+}
+.twitter-button:hover {
+    color: #faf8fa;
+}
+
+.stack-overflow-button {
+    background-color: #f48024;
+    color: white;
+}
+.stack-overflow-button:hover {
+    color: white;
+}
+
+.linkedin-button {
+    background-color: #0077b5;
+    color: white;
+}
+.linkedin-button:hover {
+    color: white;
+}
+
+.github-button {
+    background-color: #333;
+    color: #fafafa;
+}
+.github-button:hover {
+    color: #fafafa;
+}
+
+.family-card {
+    max-width: 256px;
+    margin: 0 auto;
+}
+
+.family-card img {
+    width: 256px;
+    height: 256px;
+}
+
+.social-media-button {
+    text-align: center;
+    display: inline-block;
+    border: 1px solid grey;
+    border-radius: .5em;
+    width: 141px;
+    height: 141px;
+    line-height: 141px;
+}
+
+.social-media-button > div {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    top: -7px;
+}
